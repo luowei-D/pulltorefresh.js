@@ -257,7 +257,7 @@
         window.removeEventListener('touchend', _onTouchEnd);
         window.removeEventListener('touchmove', _onTouchMove, _passiveSettings);
         window.removeEventListener('scroll', _onScroll);
-        if (_el.ptrElement && _el.ptrElement.parentNode) {
+        if (_el && _el.ptrElement && _el.ptrElement.parentNode) {
           _el.ptrElement.parentNode.removeChild(_el.ptrElement);
           _el.ptrElement = null;
         } // reset state
